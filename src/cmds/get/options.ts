@@ -12,13 +12,11 @@ export const getOptions: ICliCommandOptions<IGetArgs> = {
   cid: {
     description: 'The cid of the file to get',
     normalize: true,
-    default: undefined,
     type: 'string'
   },
   output: {
     description: 'The full local path where the file will be saved',
     normalize: true,
-    default: undefined,
     type: 'string'
   },
   gateway: {
@@ -30,7 +28,6 @@ export const getOptions: ICliCommandOptions<IGetArgs> = {
   key: {
     description: 'The decryption key from ChainSafe Files',
     normalize: true,
-    default: '',
     type: 'string'
   }
 }
