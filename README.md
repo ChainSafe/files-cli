@@ -8,12 +8,12 @@
 Currently, the only available command is `get`.
 
 Required arguments:
-- `--cid`: The IPFS cid of the file to get
-- `--output`: The full local path where the file will be saved once downloaded and decrypted
-- `--key`: The decryption key from ChainSafe Files, available when looking at the browser console after login
+- `--cid`: IPFS content identifier of the file to get
+- `--output`: Full local path where the file will be saved once downloaded and decrypted
+- `--key`: Decryption key from ChainSafe Files, available when looking at the browser console after login
 
 Optionnal arguments:
-- `--gateway`: The IPFS gateway to get the file from. Default: "https://ipfs.io/ipfs/"
+- `--gateway`: IPFS gateway to get the file from. Default: "https://ipfs.io/ipfs/"
 
 ### Running it using npx
 
@@ -45,7 +45,7 @@ files-cli --help
 
 ## How to build it from the sources
 
-We're usin yarn here but it would work with npm as well.
+We're using yarn here but it works with npm as well.
 
 ```bash
 git clone https://github.com/ChainSafe/files-cli.git
@@ -58,7 +58,7 @@ node lib/index.js --help
 node lib/index.js get --cid QmfVd...ZAk --output "./my-image.jpg" --key UUc...td8=
 ```
 
-## Documentation
+## Type Documentation
 
 See https://chainsafe.github.io/files-cli
 

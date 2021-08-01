@@ -10,7 +10,7 @@ export const get: ICliCommand<Record<never, never>, IGetArgs & IGlobalArgs > = {
 
   examples: [
     {
-      command: 'get --cid QmfVdB5zEzEdwfKFmY3QXkpo5ahTqPLAde6XPa5UtC7ZAk --gateway "https://ipfs.io/ipfs/"',
+      command: 'get --cid QmfVdB5zEzEdwfKFmY3QXkpo5ahTqPLAde6XPa5UtC7ZAk --key abcdbef --output ./my-doc.pdf --gateway "https://ipfs.io/ipfs/"',
       description: ''
     }
   ],
