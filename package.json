@@ -23,7 +23,7 @@
         "build:release": "yarn clean && yarn run build && yarn run build:typedocs",
         "build:lib": "babel src -x .ts -d lib --source-maps --copy-files",
         "build:lib:watch": "yarn run build:lib --watch",
-        "build:typedocs": "typedoc --exclude src/index.ts --out typedocs src",
+        "build:typedocs": "typedoc --exclude src/index.ts --out docs src",
         "build:types": "tsc --project tsconfig.build.json --incremental --declaration --outDir lib --emitDeclarationOnly",
         "build:types:watch": "yarn run build:types --watch --preserveWatchOutput",
         "build:refdocs": "ts-node docsgen docs/cli.md",

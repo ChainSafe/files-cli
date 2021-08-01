@@ -25,7 +25,16 @@ npx @chainsafe/files-cli --help
 npx @chainsafe/files-cli get --cid QmfVd...ZAk --output "./my-image.jpg" --key UUc...td8=
 ```
 
-### Installing it globally
+### Installing it globally with yarn
+```bash
+# Install the binary
+yarn global add @chainsafe/files-cli
+
+# Make sure it works and prints the help
+files-cli --help
+```
+
+### Installing it globally with npm
 ```bash
 # Install the binary
 npm install -g @chainsafe/files-cli
@@ -36,7 +45,7 @@ files-cli --help
 
 ## How to build it from the sources
 
-We're usin yarn but it would work with npm as well.
+We're usin yarn here but it would work with npm as well.
 
 ```bash
 git clone https://github.com/ChainSafe/files-cli.git
@@ -48,6 +57,10 @@ node lib/index.js --version
 node lib/index.js --help
 node lib/index.js get --cid QmfVd...ZAk --output "./my-image.jpg" --key UUc...td8=
 ```
+
+## Documentation
+
+See https://chainsafe.github.io/files-cli
 
 ## Development
 

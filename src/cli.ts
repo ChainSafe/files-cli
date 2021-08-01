@@ -7,7 +7,7 @@ import { registerCommandToYargs } from './util'
 const { name, description } = require('../package.json')
 
 const topBanner = description
-const bottomBanner = 'For more information, check the CLI docs [...]'
+const bottomBanner = 'For more information, check the CLI docs: https://chainsafe.github.io/files-cli'
 
 /**
  * Common factory for running the CLI and running integration tests
