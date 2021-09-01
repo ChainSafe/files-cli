@@ -8,9 +8,9 @@
 Currently, the only available command is `get`.
 
 Required arguments:
-- `--cid`: IPFS content identifier of the file to get
-- `--output`: Full local path where the file will be saved once downloaded and decrypted
-- `--key`: Decryption key from ChainSafe Files, available when looking at the browser console after login
+- `--cid`: IPFS content identifier of the file to get. This is available in the "info" menu for each file stored on Files.
+- `--output`: Full local path where the file will be saved once downloaded and decrypted, for example `./my-image.jpg`
+- `--key`: Decryption key from ChainSafe Files. This is available in the "info" menu from each file stored on Files.
 
 Optionnal arguments:
 - `--gateway`: IPFS gateway to get the file from. Default: "https://ipfs.io/ipfs/"
