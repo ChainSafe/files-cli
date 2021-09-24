@@ -1,6 +1,6 @@
 {
     "name": "@chainsafe/files-cli",
-    "version": "0.0.11",
+    "version": "0.0.12",
     "description": "A cli to download, decrypt and save locally any file uploaded to ChainSafe Files.",
     "repository": "https://github.com/ChainSafe/files-cli/",
     "license": "GPL-3.0-or-later",
