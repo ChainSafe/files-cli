@@ -22,9 +22,16 @@ export async function getHandler ({ cid, output, gateway, key }: IGetArgs): Prom
  * @return {Promise<>}
  */
 const downloadFile = async (url: string, fileFullPath: string, key: string): Promise<void> => {
-  console.info(`> Downloading file from: ${url}`)
+  console.info(`> Requesting the file from: ${url}`)
   return new Promise((resolve, reject) => {
     https.get(url, (resp) => {
+      if (resp.statusCode !== 200) {
+        console.error(`Oops, we couldn't request the file, the gateway answered with an error code: ${resp.statusCode}`)
+        return
+      }
+
+      console.info('> Downloading...')
+
       const chunks: Buffer[] = []
       // chunk received from the server
       resp.on('data', (chunk: Buffer) => {
@@ -33,6 +40,7 @@ const downloadFile = async (url: string, fileFullPath: string, key: string): Pro
 
       // last chunk received, we are done
       resp.on('end', async () => {
+        console.info('> Decrypting...')
         const data = Buffer.concat(chunks)
         const decrypted = await decryptFile(data, key)
 
